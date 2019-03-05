@@ -130,7 +130,7 @@
           </li>
          <li>
               <div class="project" >
-                 <a href="#"></a>
+                 <a href="#project_edit"></a>
                      <span class="more_2">more</span>
                   <div class="header_image_graphic"></div>
                   <div id="moreRegion1" style="display:none;">
@@ -230,12 +230,15 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $(".more").click(function(){
-      $("#moreRegion").slideToggle(1000);
+    $("#moreRegion").slideToggle(1000);
+     });
+  $(".more_2").click(function(){
+      $(this).show(function(){
+        $("#moreRegion1").slideToggle(1000);
+      });
 });
 
-$("more_2").click(function(){
-   $("#moreRegion1").slideToggle(1000);
-   });
+
 });
 </script>
 

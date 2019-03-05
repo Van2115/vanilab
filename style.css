@@ -327,15 +327,15 @@ section, footer{
   height: 680px;
   width: 50%;
    left:50%;
-   /* z-index: 1; */
+    z-index: 1;
 
 }
 .chapter_content_de{
-   position: absolute;
+   position: relative;
   height: 680px;
   width: 50%;
    left:50%;
-z-index: 1;
+z-index: 3;
    overflow-y: scroll;
 }
 
@@ -458,6 +458,7 @@ nav>ol, nav>ul{
 }
 
 .header_image{
+  position: relative;
   background-image: url(APP.jpg);
   height: 380px;
   background-repeat: no-repeat;
@@ -467,6 +468,7 @@ nav>ol, nav>ul{
 }
 
 .header_image_graphic{
+  position: relative;
   background-image: url(graphic.jpg);
   height: 380px;
   background-repeat: no-repeat;
@@ -502,12 +504,14 @@ nav>ol, nav>ul{
 
 
 .more , .more_2{
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  left: 35%;
+  top:50%;
   background:#1AAB8A;
   color:#fff;
   border:none;
-  position:relative;
-  height:60px;
+  height:35px;
   font-size:1.6em;
   padding:0 2em;
   cursor:pointer;
@@ -527,7 +531,8 @@ nav>ol, nav>ul{
 .more:before, .more:after{
   content:'';
   position:absolute;
-  top:0;
+  z-index: 1;
+  /* top:0; */
   right:0;
   height:2px;
   width:0;
@@ -566,15 +571,4 @@ nav>ol, nav>ul{
 .more_2 :hover:before,.more_2:hover:after{
   width:100%;
   transition:800ms ease all;
-}
-
-/* #moreRegion,##moreRegion1{
-  position: relative;
-} */
-
-
-
-/*mobie screen 320*/
-@media screen and (max-width:420px){
- section(margin-bottom:10px;)
 }
