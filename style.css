@@ -24,7 +24,7 @@ text-align: left;
   text-align: left;
 }
 
-.drawsvg,.drawsvg_foot,svg {
+.drawsvg,svg {
   position: absolute;
     width: 100%;
     height: 300px;
@@ -118,13 +118,13 @@ text-align: left;
     }
 }
 
-#fade-text, {
+#fade-text{
     font-family: 'Alex Brush', cursive;
-    font-size: 4em
+    font-size: 4em;
 }
  #fade-text_foot{
      font-family: 'Alex Brush', cursive;
-     font-size: 5em
+     font-size: 5em;
  }
 
 
